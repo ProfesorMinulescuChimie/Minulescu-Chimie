@@ -1,0 +1,710 @@
+/* ===== VIEWPORT & BASE ===== */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Comic-Sans';
+    src: url('Assets/Fonts/Comic Sans MS.ttf');
+}
+h1, header h1 {
+    color: ghostwhite;
+    background-color: darkblue;
+    border: 5px solid darkslateblue;
+    font-size: clamp(1.4rem, 3vw, 4.5em);
+}
+header p {
+    font-size: clamp(1.1rem, 3vw, 4.5em);
+}
+h2 {
+    margin: 10px;
+    color: darkslateblue;
+    font-size: clamp(0.95rem, 2vw, 2.7em);
+}
+h3 {
+    font-size: clamp(0.85rem, 1.6vw, 2em);
+    color: red;
+}
+p {
+    color: black;
+    font-size: clamp(0.85rem, 1.6vw, 2em);
+}
+strong {
+    color: darkorange;
+    font-size: 1.1em;
+}
+strong1{
+    color: darkorange;
+    font-size: 1.1em;
+}
+strong2 {
+    color: red;
+    font-size: 1.1em;
+}
+strong3{
+    color: seagreen;
+    font-size: 1.1em;
+}
+strong4{
+    color: steelblue;
+    font-size: 1.1em;
+}
+strong5{
+    color: floralwhite;
+    font-size: 1.1em;
+}
+strong6{
+    color: lightgoldenrodyellow;
+    font-size: 1.1em;
+}
+legend{
+    font-size:0.85em;
+}
+table {
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+}
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+td a {
+    color: rebeccapurple !important;
+    font-size: clamp(0.85rem, 1.6vw, 1.6em) !important;
+    text-decoration: none;
+}
+td a:hover {
+    text-decoration: underline;
+}
+footer {
+    border: 5px solid darkslateblue;
+    background-color: darkblue;
+    padding: 10px;
+    color: ghostwhite;
+}
+footer p {
+    color: ghostwhite;
+}
+footer a {
+    color: ghostwhite;
+}
+index {
+    font-size: 0.85rem;
+}
+header {
+    border: 5px solid darkslateblue;
+    background-color: darkblue;
+    padding: clamp(10px, 5vw, 30px);
+}
+header p {
+    font-size: clamp(1.1rem, 4.5vw, 3em);
+    color: ghostwhite;
+}
+header h1 {
+    font-size: clamp(1.4rem, 4.5vw, 3em);
+    color: ghostwhite;
+    border: none;
+}
+button {
+    font-size: clamp(0.85rem, 1.6vw, 1.6em) !important;
+}
+button a {
+    font-size: 0.6em !important;
+}
+label {
+    font-size: clamp(0.85rem, 1.6vw, 2em);
+}
+.big {
+    font-size: clamp(1.05rem, 2vw, 2.4em);
+}
+.closed {
+    margin: 10px;
+    color: black;
+    border: 5px solid lightseagreen;
+    border-radius: 40px;
+    padding: 20px;
+    display: block;
+    width: calc(100% - 20px);
+}
+.closed-background {
+    font-family: sans-serif;
+    margin: 10px;
+    border: 5px solid darkblue;
+    border-radius: 40px;
+    padding: 20px;
+    background-color: darkslateblue;
+    display: block;
+    width: calc(100% - 20px);
+}
+.closed-background p {
+    color: whitesmoke !important;
+}
+.closed-background h2 {
+    color: whitesmoke !important;
+}
+.teorie {
+    border: 5px solid darkblue;
+    border-radius: 40px;
+    padding: 15px;
+    margin: 5px;
+    display: block;
+    color: black;
+    background-color: lightblue;
+    overflow: hidden;
+    width: calc(100% - 10px);
+}
+.teorie-col {
+    border: 5px solid darkblue;
+    border-radius: 40px;
+    padding: 15px;
+    margin: 5px;
+    display: inline-gridn;
+    color: black;
+    background-color: lightblue;
+    width: calc(100% - 10px);
+}
+
+.teorie-formula {
+    padding: 1px;
+    margin: 1px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    color: black;
+    background-color: lightblue;
+}
+.closed-formula {
+    margin: 1px;
+    color: black;
+    border: 5px solid lightseagreen;
+    border-radius: 40px;
+    padding: 1px;
+    display: inline-block;
+}
+.hint p {
+    color: gray;
+    font-size: clamp(9px, 1.6vw, 12px);
+}
+.red strong {
+    display: inline-block;
+    color: red;
+}
+.text-red p {
+    display: inline-block;
+    color: red;
+}
+.teorie img {
+    float: none;
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+    max-width: 100%;
+}
+.teorie-col img {
+    border: 5px solid darkblue;
+    border-radius: 10px;
+    float: none;
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+    max-width: 80%;
+}
+.profile-img {
+    border: 5px solid darkblue;
+    border-radius: 50px;
+    width: 100%;
+    max-width: 400px;
+    min-width: unset;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.big-img {
+    height: auto;
+}
+.small-img {
+    width: 40% !important;
+    max-width: 150px;
+    height: auto;
+}
+.fade-in-element {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.fade-in-element.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.outline {
+    margin: 5px;
+    padding: 10px;
+    display: block;
+    width: calc(100% - 10px);
+    background-color: whitesmoke;
+    border: 5px solid darkblue;
+    border-radius: 50px;
+}
+.card-text {
+    color: black !important;
+}
+.card-img-top {
+    max-height: 500px !important;
+    width: 100%;
+    object-fit: cover;
+}
+.card-body {
+    padding: 5px;
+    background-color: whitesmoke !important;
+}
+.card {
+    width: 100%;
+    max-width: 1000px;
+    min-width: unset;
+    background-color: transparent;
+    margin: 5px auto;
+}
+.card-body p {
+    color: white;
+}
+.result {
+    color: black !important;
+}
+.option {
+    display: block;
+    padding: 6px;
+    border-radius: 6px;
+}
+.correct {
+    background-color: #c8f7c5;
+}
+.wrong {
+    background-color: #f7c5c5;
+}
+.closed-background .teorie p {
+    color: black !important;
+}
+.explain-text {
+    display: none;
+}
+.explain-text.visible {
+    border: 5px solid darkblue;
+    border-radius: 40px;
+    padding: 15px;
+    margin: 5px;
+    color: steelblue !important;
+    background-color: lightblue;
+    overflow: hidden;
+    width: calc(100% - 10px);
+    display: block;
+}
+.explain-text.visible p {
+    color: steelblue !important;
+}
+
+.option input[type="radio"] {
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    accent-color: #0d6efd;
+    flex-shrink: 0;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+/* ===== RESPONSIVE BREAKPOINTS ===== */
+@media (min-width: 550px) {
+    .option input[type="radio"] {
+        width: 0.5rem;
+        height: 0.5rem;
+    }
+    .big-img {
+        height: auto;
+        min-width: 200px;
+        max-width: 250px;
+    }
+    .teorie img {
+        float: right;
+        margin-left: 15px;
+        width: auto;
+        max-width: 45%;
+    }
+    .small-img {
+        width: 20% !important;
+    }
+    .closed,
+    .closed-background,
+    .teorie,
+    .outline {
+        display: inline-block;
+        width: auto;
+    }
+    .profile-img {
+        min-width: 300px;
+        max-width: 550px;
+        margin: 1 auto;
+        display: block;
+    }
+    index {
+        font-size: 3px;
+    }
+}
+/* Fix Bootstrap columns on mobile */
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Center content inside columns on small screens */
+@media (max-width: 576px) {
+    .option input[type="radio"] {
+        width: 1rem;
+        height: 1rem;
+    }
+    .row {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .big-img {
+        height: auto;
+        min-width: 200px;
+        max-width: 250px;
+    }
+    .closed,
+    .closed-background,
+    .outline {
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        border-radius: 20px;
+        box-sizing: border-box;
+    }
+    .teorie {
+        padding: 2px !important;
+        border-radius: 20px;
+    }
+
+    img:not(.profile-img) {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .profile-img {
+        min-width: 200px;
+        max-width: 550px;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+html {
+    scrollbar-gutter: stable;
+}
+
+* {
+    outline: 0px solid red;
+}
+@media (max-width: 1000px) {
+    .option input[type="radio"] {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+}
+
+/* ===== NORMAL SCREENS (1000px+) ===== */
+@media (min-width: 1000px) {
+    .option input[type="radio"] {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .card {
+        min-width: 900px;
+    }
+    .card-img-top {
+        min-height: 500px;
+    }
+    .big-img {
+        height: auto;
+        min-width: 500px;
+        max-width: 550px;
+    }
+
+    h1, header h1 {
+        font-size: 3.8em;
+    }
+    header h1 {
+        font-size: 3.8em;
+    }
+    header p {
+        font-size: 2.3em;
+    }
+    h2 {
+        font-size: 2.3em;
+    }
+    h3 {
+        font-size: 1.6em;
+    }
+    p {
+        font-size: 1.2em;
+    }
+    label {
+        font-size: 1.2em;
+    }
+    button {
+        font-size: 0.8em !important;
+    }
+    td a {
+        font-size: 1.2em !important;
+    }
+    legend {
+        font-size: 0.4em;
+    }
+    .big {
+        font-size: 2em;
+    }
+    .hint p {
+        font-size: 0.65em;
+    }
+    
+    .profile-img {
+        min-width: 300px;
+    }
+    index {
+        font-size: 5px;
+    }
+}
+
+/* ===== WIDE SCREENS (2000px+) ===== */
+@media (min-width: 2000px) {
+    .option input[type="radio"] {
+        width: 2rem;
+        height: 2rem;
+    }
+    .card {
+        min-width: 1700px;
+    }
+    .card-img-top {
+        min-height: 900px;
+    }
+    .big-img {
+        height: auto;
+        min-width: 500px;
+        max-width: 550px;
+    }
+    .closed,
+    .closed-background,
+    .outline {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        border-radius: 40px;
+        border-width: 7px;
+        box-sizing: border-box;
+    }
+    .teorie-col,
+    .teorie {
+        padding: 10px !important;
+        border-width: 7px;
+        border-radius: 40px;
+    }
+    h1, header h1 {
+        font-size: 6em;
+    }
+    header h1 {
+        font-size: 6em;
+    }
+    header p {
+        font-size: 5em;
+    }
+    h2 {
+        font-size: 3.5em;
+    }
+    h3 {
+        font-size: 2.7em;
+    }
+    p {
+        font-size: 2.2em;
+    }
+    label {
+        font-size: 2.2em;
+    }
+    button {
+        font-size: 1.8em !important;
+    }
+    td a {
+        font-size: 1.8em !important;
+    }
+    legend {
+        font-size: 1.3em;
+    }
+    .big {
+        font-size: 3.1em;
+    }
+    .hint p {
+        font-size: 0.65em;
+    }
+    .profile-img {
+        min-width: 550px;
+    }
+}
+
+/* ===== ULTRA-WIDE SCREENS (3000px+) ===== */
+@media (min-width: 3000px) {
+    .option input[type="radio"] {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    .card {
+        min-width: 2900px;
+    }
+    .card-img-top {
+        min-height: 1300px;
+    }
+    .big-img {
+        height: auto;
+        min-width: 700px;
+        max-width: 750px;
+    }
+    .closed,
+    .closed-background,
+    .outline {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        border-radius: 50px;
+        border-width: 8px;
+        box-sizing: border-box;
+    }
+    .teorie-col,
+    .teorie {
+        padding: 10px !important;
+        border-width: 8px;
+        border-radius: 50px;
+    }
+    index {
+        font-size: 45px;
+    }
+    h1, header h1 {
+        font-size: 6.8em;
+    }
+    header h1 {
+        font-size: 6.8em;
+    }
+    header p {
+        font-size: 6em;
+    }
+    h2 {
+        font-size: 4.5em;
+    }
+    h3 {
+        font-size: 3.8em;
+    }
+    p {
+        font-size: 3.4em;
+    }
+    label {
+        font-size: 3.4em;
+    }
+    button {
+        font-size: 3em !important;
+    }
+    td a {
+        font-size: 3em !important;
+    }
+    legend {
+        font-size: 2.3em;
+    }
+    .big {
+        font-size: 4.1em;
+    }
+    .hint p {
+        font-size: 2.1em;
+    }
+    .profile-img {
+        min-width: 800px;
+    }
+}
+
+/* ===== SMART BOARDS (4000px+) ===== */
+@media (min-width: 4000px) {
+    .option input[type="radio"] {
+        width: 5rem;
+        height: 5rem;
+    }
+    .card {
+        min-width: 3100px;
+    }
+    .card-img-top {
+        min-height: 1500px;
+    }
+    .big-img {
+        height: auto;
+        min-width: 800px;
+        max-width: 850px;
+    }
+    .closed,
+    .closed-background,
+    .outline {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        border-radius: 60px;
+        border-width: 10px;
+        box-sizing: border-box;
+    }
+    .teorie-col,
+    .teorie {
+        padding: 15px !important;
+        border-width: 10px;
+        border-radius: 60px;
+    }
+    index {
+        font-size: 65px;
+    }
+    h1, header h1 {
+        font-size: 7.9em;
+    }
+    header h1 {
+        font-size: 7.9em;
+    }
+    header p {
+        font-size: 7em;
+    }
+    h2 {
+        font-size: 5.3em;
+    }
+    h3 {
+        font-size: 4.4em;
+    }
+    p {
+        font-size: 3.9em;
+    }
+    label {
+        font-size: 3.9em;
+    }
+    button {
+        font-size: 3.5em !important;
+    }
+    td a {
+        font-size: 3.5em !important;
+    }
+    legend {
+        font-size: 2.7em;
+    }
+    .big {
+        font-size: 4.8em;
+    }
+    .hint p {
+        font-size: 2.5em;
+    }
+    .profile-img{
+        min-width: 900px;
+    }
+}
